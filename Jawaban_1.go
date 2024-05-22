@@ -10,7 +10,7 @@ func charWeight(char rune) int {
 }
 
 // Hitung weight dari string
-func weightedStrings(s string, queries []int) []string {
+func pengecekanWeight(s string, queries []int) []string {
 	weights := make(map[int]bool)
 	
 	n := len(s)
@@ -53,7 +53,7 @@ func main() {
 	queries := []int{1, 3, 9, 8}
 	
 	// Menghitung weight
-	result := weightedStrings(s, queries)
+	result := pengecekanWeight(s, queries)
 	
 	// Print hasilnya
 	fmt.Println(result)
